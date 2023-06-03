@@ -1,0 +1,16 @@
+while True: 
+    number1 = float(input("Enter first number: "))
+    number2 = float(input("Enter second number: "))
+    oprand = str(input("Enter your operator (*,/,+,-): "))
+    oprandList = ["+","-","*","/"]
+    if (oprand in oprandList):
+        if (oprand == "+"):
+            print(str(number1 + number2) + "\n")
+        elif (oprand == "-"):
+            print(str(number1 - number2) + "\n")
+        elif (oprand == "*"):
+            print(str(number1 * number2) + "\n")
+        else:
+            print(str(number1 / number2) + "\n")
+    else:
+        print("Error! retry again later \n")
